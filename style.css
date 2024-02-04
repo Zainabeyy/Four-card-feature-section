@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  color: hsl(229, 6%, 66%);
+  font-size: 0.8rem;
+  margin: 60px 30px;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#thin {
+  font-weight: 200;
+}
+#bold {
+  font-weight: 700;
+}
+header {
+  margin: 60px 0px 25px;
+  color: hsl(234, 12%, 34%);
+}
+.dicription {
+  font-size: 1rem;
+  margin: 30px 0px 80px;
+}
+.card {
+  text-align: left;
+  border-top: 5px solid;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 20px 0px;
+  position: relative;
+  box-shadow: 1px 4px 20px hsla(234, 12%, 34%, 0.322);
+}
+.card h2 {
+  color: hsl(234, 12%, 34%);
+  margin: 0px 0px 10px;
+}
+.card p {
+  font-size: 0.9rem;
+  margin: 10px 0px 80px;
+}
+.card img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px 25px;
+}
+#card1 {
+  border-top-color: hsl(180, 62%, 65%);
+}
+#card2 {
+  border-top-color: hsl(0, 78%, 62%);
+}
+#card3 {
+  border-top-color: hsl(34, 97%, 64%);
+}
+#card4 {
+  border-top-color: hsl(212, 86%, 64%);
+}
+/*for desktop screen size*/
+@media only screen and (min-width: 900px) {
+  body {
+    min-height: 100vh;
+    margin: 10px 60px;
+  }
+  header {
+    font-size: 1rem;
+    margin:0px;
+  }
+  .dicription {
+    max-width: 40%;
+    margin: 20px 30px 50px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+  .card{
+    margin: 20px;
+    max-width: 350px;
+    min-height: 240px;
+  }
+  #card1{
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  #card2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  #card3{
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  #card4{
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+}
